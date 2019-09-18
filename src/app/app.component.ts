@@ -11,4 +11,6 @@ export class AppComponent {
     id: 1,
     name: 'habibi'
   };
+
+  list = ['aku', 'ich', 'I'];
 }
