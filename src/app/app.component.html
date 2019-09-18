@@ -1,21 +1,13 @@
-<h1>
-  {{title}}
-  <br>
-  {{object.name}}
-</h1>
-
-<ul>
-  <li *ngFor="let i of list">{{i}}</li>
-</ul>
-
-
-<a routerLink="/my-component">My Component</a>
-<br>
-<a routerLink="/member">Member</a>
-<br>
-<a routerLink="/product">Product</a>
-<br>
-
-<router-outlet></router-outlet>
-
-
+<div class="main">
+  <h1>Item's List</h1>
+  <div class="addItem">
+    <input placeholder="Add Item" class="addText">
+    <button>Add</button>
+  </div>
+  <ul>
+    <li>
+      abc
+      <span>x</span>
+    </li>
+  </ul>
+</div>
