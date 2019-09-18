@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'todolistapp';
-  object = {
-    id: 1,
-    name: 'habibi'
+
+  items = ['Angular 4', 'React', 'JS'];
+  newItem = '';
+  pushItem = function() {
+    // tslint:disable-next-line:triple-equals
+    if (this.newItem != '') {
+      this.items.push(this.newItem);
+      this.newItem = '';
+    }
   };
 
-  list = ['aku', 'ich', 'I'];
+  removeItem = function(index) {
+    this.items.splice(index, 1);
+
+  };
+
 }
