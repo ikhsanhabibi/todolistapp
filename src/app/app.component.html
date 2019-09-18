@@ -5,9 +5,9 @@
     <button (click)="pushItem()">Add</button>
   </div>
   <ul>
-    <li *ngFor="let i of items">
+    <li *ngFor="let i of items let ind=index">
       {{i}}
-      <span (click)="removeItem(i)">x</span>
+      <span (click)="removeItem(ind)">x</span>
     </li>
   </ul>
 </div>
