@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todolistapp';
+  object = {
+    id: 1,
+    name: 'habibi'
+  };
 }
